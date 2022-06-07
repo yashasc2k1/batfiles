@@ -1,0 +1,27 @@
+1) Select the VM to be cloned.
+2) Goto file->Export->Export OVF template.
+3) Provide the location in physical machine, where the copy of VM to be stored.
+4) The Export is in progress.
+5) The export is completed successfully.
+6) Goto location where the VM file is stored. Check for an OVF file in it.
+7) Goto inventory, Select the hypervisor on which the VM is tobe cloned.
+8) Goto file->Deploy OVF template.
+9) Browse for the location where the OVF file is available.
+10) Proceed further and select the required options. And finish.
+11) The deployment is under progress.
+12) The VM is deployed successfully as a new VM.
+Create one more VM by performing just deployment, no need of export again.
+13) Power on and open all 3 VM’s. (1 original and 2 cloned VM’s)
+14) Find the IP of those VM’s and perform the PING across them and observe the result.
+15) For creating the multiple networks on same switch. Select the hypervisor, goto Configuration tab and select Networking.
+16) Use the option ‘Add’
+17) Select the Virtual Machine for which the networks is been created.
+18) Provide the name of the network. And proceed further.
+19) Once the multiple networks available on switch.
+20) Right click on the VM which need to be moved to different network. Select Edit Settings.
+21) Select Network adapter, goto network label and select VMnetwork 2. The different network.
+22) To add multiple adapters to a VM, Select and goto edit settings.
+23) Use the option, Add.
+24) Select Ether Adapter. Proceed further and finish.
+25) Now select the second adapter, network label and choose the different network. Make sure 2 adapters are with 2 networks.
+26) Power on all the VM’s, Open in console, Ping across them and observe the results.

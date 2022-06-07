@@ -1,0 +1,39 @@
+1) Go to VMware Workstation.
+2) Power on the hypervisor (VMWare ESXi)
+3) Hypervisor is ready. Note down the IPv4 address of hypervisor
+4)Start the vSphere Client.
+5)Provide the IPv4 of hypervisor and username as root and password as root123
+6) An inventory is ready for use
+7) Select the IP of hypervisor. Goto Summary tab
+8) Select datastore. Right click and ‘Browse Datastore’
+9) Upload the source file, windows xp and iso file.
+10) select the file from current location and upload.
+11) The uploading is in progress. May take couple of minutes.
+12) The course file is uploaded successfully to datastore.
+13) Select ip of hypervisor and right click, use the option ‘New Virtual Machine’
+14) Select the Custom option, to set configure based on the physical machine. And proceed further.
+15) Select the VM version compatible to physical machine. Select 8 or less here.
+16) Choose the guest operating system. Here we are using windows xp with 32 bit.
+17) Set atleast 2 cores for the VM.
+18) Set the RAM capacity for the VM, minimum of 1GB. And proceed further.
+19) Set the hard disk capacity, minimum of 20GB.
+20) Proceed further and select the Edit option, by ticking.
+21) Goto the option, CD/DVD. Select datastore ISO file, browse and goto location where the source file is uploaded.
+22) Once the path is provided, Check the ‘connect at power on’ and then finish.
+23) Right click on newly created VM. Use the option ‘power on’
+24) Right click on new VM and select ‘open console’
+25) Follow the instructions displayed at booting time.
+26) Once the VM is created completely, then goto command prompt.
+27) use the command ‘ipconfig’ to find its address
+28) Find the IP address of Physical machine also.
+29) Ping from VM to PM
+30) Ping from PM to VM may throw an error, due to firewall block at VM.
+31) Clear the firewall at VM. So that it can allow the request from other machine.
+32) Now ping from PM to VM. And its success.
+33) To demonstrate about the Snapshot. Create any data files in VM.
+34) Right click on VM, use the option, Snapshot, Take Snapshot.
+35) Give the name of the snapshot to be stored.
+36) All the stored snapshots will be available in Snapshot Manager.
+37) If any data is deleted by any failure. It can be retrieved back.
+38) Use the option, Revert to Current Snapshot for restoring.
+39) The deleted data is restored.
